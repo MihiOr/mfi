@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="695" viewBox="0 0 1200 695" role="img" aria-labelledby="title desc">
+<title id="title">Four direct optical paths in the MFI prototype</title>
+<desc id="desc">Two control paths and two independent simplex data paths connect a master and slave using red LEDs shining directly into receivers. There are no fibers. Software keeps the data directions mutually exclusive.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172b4d;font-size:17px}.title{font-size:27px;font-weight:700}.head{font-size:21px;font-weight:600}.small{font-size:15px;fill:#455a70}.mono{font-family:Consolas,monospace}.label{font-weight:600}</style>
+<rect width="1200" height="695" fill="white"/>
+<text x="40" y="48" class="title">Prototype · four direct LED-to-receiver paths</text>
+<text x="40" y="79" class="small">No fibers. Two separate data paths emulate one half-duplex DATA fiber.</text>
+<rect x="40" y="105" width="300" height="465" rx="12" fill="#f3f6fa" stroke="#c2cfde"/>
+<rect x="860" y="105" width="300" height="465" rx="12" fill="#f3f6fa" stroke="#c2cfde"/>
+<text x="190" y="146" class="head" text-anchor="middle">Endpoint A · master</text>
+<text x="1010" y="146" class="head" text-anchor="middle">Endpoint B · slave</text>
+
+<text x="66" y="221" class="mono">SIGNAL_TX</text><text x="952" y="221" class="mono">SIGNAL_RX</text>
+<text x="600" y="193" text-anchor="middle" class="label">Request DOL / response ACK</text>
+<path d="M355 215 H843" stroke="#2868b8" stroke-width="3" stroke-dasharray="8 6" fill="none" marker-end="url(#arrow)"/>
+<circle cx="304" cy="215" r="19" fill="#f8c9cf" stroke="#bd3847" stroke-width="2"/><text x="304" y="220" text-anchor="middle" class="small">LED</text>
+<rect x="876" y="197" width="42" height="36" rx="5" fill="#d9e8f8" stroke="#2d6198" stroke-width="2"/><text x="897" y="220" text-anchor="middle" class="small">RX</text>
+<text x="600" y="242" text-anchor="middle" class="small">Direct light</text>
+<text x="66" y="321" class="mono">DATA_TX</text><text x="952" y="321" class="mono">DATA_RX</text>
+<text x="600" y="293" text-anchor="middle" class="label">Request data · A → B</text>
+<path d="M355 315 H843" stroke="#117f8c" stroke-width="3" stroke-dasharray="8 6" fill="none" marker-end="url(#arrow)"/>
+<circle cx="304" cy="315" r="19" fill="#f8c9cf" stroke="#bd3847" stroke-width="2"/><text x="304" y="320" text-anchor="middle" class="small">LED</text>
+<rect x="876" y="297" width="42" height="36" rx="5" fill="#d9e8f8" stroke="#2d6198" stroke-width="2"/><text x="897" y="320" text-anchor="middle" class="small">RX</text>
+<text x="600" y="342" text-anchor="middle" class="small">Direct light</text>
+<text x="66" y="421" class="mono">DATA_RX</text><text x="952" y="421" class="mono">DATA_TX</text>
+<text x="600" y="393" text-anchor="middle" class="label">Response data · B → A</text>
+<path d="M845 415 H357" stroke="#117f8c" stroke-width="3" stroke-dasharray="8 6" fill="none" marker-end="url(#arrow)"/>
+<circle cx="897" cy="415" r="19" fill="#f8c9cf" stroke="#bd3847" stroke-width="2"/><text x="897" y="420" text-anchor="middle" class="small">LED</text>
+<rect x="283" y="397" width="42" height="36" rx="5" fill="#d9e8f8" stroke="#2d6198" stroke-width="2"/><text x="304" y="420" text-anchor="middle" class="small">RX</text>
+<text x="600" y="442" text-anchor="middle" class="small">Direct light</text>
+<text x="66" y="521" class="mono">SIGNAL_RX</text><text x="952" y="521" class="mono">SIGNAL_TX</text>
+<text x="600" y="493" text-anchor="middle" class="label">Request ACK / response DOL</text>
+<path d="M845 515 H357" stroke="#7950b5" stroke-width="3" stroke-dasharray="8 6" fill="none" marker-end="url(#arrow)"/>
+<circle cx="897" cy="515" r="19" fill="#f8c9cf" stroke="#bd3847" stroke-width="2"/><text x="897" y="520" text-anchor="middle" class="small">LED</text>
+<rect x="283" y="497" width="42" height="36" rx="5" fill="#d9e8f8" stroke="#2d6198" stroke-width="2"/><text x="304" y="520" text-anchor="middle" class="small">RX</text>
+<text x="600" y="542" text-anchor="middle" class="small">Direct light</text>
+<rect x="40" y="592" width="1120" height="62" rx="10" fill="#fff6e8" stroke="#e7c791"/>
+<text x="600" y="619" text-anchor="middle" class="label">Software permits only one DATA transmitter at a time.</text>
+<text x="600" y="642" text-anchor="middle" class="small">Final-bit handover: DATA emitter OFF → DOL LOW → peer takes ownership.</text>
+<text x="40" y="680" class="small">Functional routing only. Component positions do not identify the physical receiver or LED order.</text>
+</svg>

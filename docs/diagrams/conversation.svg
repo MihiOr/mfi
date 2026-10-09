@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="625" viewBox="0 0 1100 625" role="img" aria-labelledby="title desc">
+<title id="title">Master-initiated request and slave-owned response</title><desc id="desc">Independent working modes lead to a request and response. Both directions use the same handshake. The slave never initiates an unsolicited frame.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172b4d;font-size:17px}.title{font-size:27px;font-weight:700}.head{font-size:21px;font-weight:600}.small{font-size:15px;fill:#455a70}.mono{font-family:Consolas,monospace}.label{font-weight:600}</style>
+<text x="40" y="48" class="title" text-anchor="start">One request + one response</text>
+<text x="40" y="80" class="small" text-anchor="start">The master initiates. The slave returns one response. Then both resume independent work.</text>
+<rect x="160" y="110" width="270" height="58" rx="10" fill="#f3f6fa" stroke="#c2cfde"/>
+<rect x="670" y="110" width="270" height="58" rx="10" fill="#f3f6fa" stroke="#c2cfde"/>
+<text x="295" y="148" class="head" text-anchor="middle">Master</text>
+<text x="805" y="148" class="head" text-anchor="middle">Slave</text>
+<path d="M295 170 L295 556" fill="none" stroke="#c2cfde" stroke-width="2" stroke-dasharray="5 6"/>
+<path d="M805 170 L805 556" fill="none" stroke="#c2cfde" stroke-width="2" stroke-dasharray="5 6"/>
+<text x="295" y="198" class="small" text-anchor="middle">Working mode</text>
+<text x="805" y="198" class="small" text-anchor="middle">Sample and cache sensors</text>
+<path d="M303 230 L795 230" fill="none" stroke="#117f8c" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="550" y="220" class="label" text-anchor="middle">REQUEST · master drives DATA</text>
+<path d="M795 269 L303 269" fill="none" stroke="#7950b5" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="550" y="259" class="small" text-anchor="middle">Per-bit ACK · slave confirms</text>
+<rect x="445" y="288" width="210" height="64" rx="10" fill="#fff6e8" stroke="#e7c791"/>
+<text x="550" y="316" class="label" text-anchor="middle">Direction handover</text>
+<text x="550" y="339" class="small" text-anchor="middle">Previous emitter OFF</text>
+<path d="M795 383 L303 383" fill="none" stroke="#117f8c" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="550" y="373" class="label" text-anchor="middle">RESPONSE · slave drives DATA</text>
+<path d="M303 422 L795 422" fill="none" stroke="#2868b8" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="550" y="412" class="small" text-anchor="middle">Per-bit ACK · master confirms</text>
+<text x="295" y="482" class="small" text-anchor="middle">Validate CRC and reply</text>
+<text x="805" y="482" class="small" text-anchor="middle">Return to working mode</text>
+<text x="295" y="524" class="small" text-anchor="middle">Return to working mode</text>
+<rect x="40" y="563" width="1020" height="39" rx="10" fill="#eef6fb" stroke="#c2dbe8"/>
+<text x="550" y="589" class="small" text-anchor="middle">One shared deadline covers request + response. A timeout latches this link terminal.</text>
+</svg>

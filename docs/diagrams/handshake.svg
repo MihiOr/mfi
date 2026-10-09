@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="565" viewBox="0 0 1100 565" role="img" aria-labelledby="title desc">
+<title id="title">Four-phase bit handshake</title><desc id="desc">Sender stages a bit, raises data on line; receiver samples and raises acknowledgment; sender lowers data on line and stages the next bit; receiver lowers acknowledgment. There are no fixed durations.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172b4d;font-size:17px}.title{font-size:27px;font-weight:700}.head{font-size:21px;font-weight:600}.small{font-size:15px;fill:#455a70}.mono{font-family:Consolas,monospace}.label{font-weight:600}</style>
+<text x="40" y="48" class="title" text-anchor="start">One bit · four handshake phases</text>
+<text x="40" y="80" class="small" text-anchor="start">Spacing is illustrative. Transitions depend on confirmation, not fixed time intervals.</text>
+<path d="M210 130 L210 395" fill="none" stroke="#d3dce6" stroke-width="1" stroke-dasharray="5 6"/>
+<path d="M330 130 L330 395" fill="none" stroke="#d3dce6" stroke-width="1" stroke-dasharray="5 6"/>
+<path d="M470 130 L470 395" fill="none" stroke="#d3dce6" stroke-width="1" stroke-dasharray="5 6"/>
+<path d="M640 130 L640 395" fill="none" stroke="#d3dce6" stroke-width="1" stroke-dasharray="5 6"/>
+<path d="M800 130 L800 395" fill="none" stroke="#d3dce6" stroke-width="1" stroke-dasharray="5 6"/>
+<path d="M965 130 L965 395" fill="none" stroke="#d3dce6" stroke-width="1" stroke-dasharray="5 6"/>
+<text x="35" y="181" class="label" text-anchor="start">DATA</text>
+<text x="35" y="252" class="label" text-anchor="start">DOL</text>
+<text x="35" y="336" class="label" text-anchor="start">ACK</text>
+<rect x="210" y="146" width="430" height="46" rx="2" fill="#eaf4f2" stroke="#91c8c0"/>
+<rect x="640" y="146" width="390" height="46" rx="2" fill="#eef4fc" stroke="#9db8dd"/>
+<text x="425" y="176" class="small" text-anchor="middle">bit i · held until ACK HIGH</text>
+<text x="835" y="176" class="small" text-anchor="middle">bit i+1 · prepared during return</text>
+<path d="M180 278 H330 V233 H640 V278 H965 V233 H1030" fill="none" stroke="#2868b8" stroke-width="4"/>
+<path d="M180 362 H470 V317 H800 V362 H1030" fill="none" stroke="#7950b5" stroke-width="4"/>
+<text x="210" y="421" class="small" text-anchor="middle">Stage DATA</text>
+<text x="330" y="443" class="small" text-anchor="middle">DOL HIGH</text>
+<text x="470" y="421" class="small" text-anchor="middle">Sample → ACK HIGH</text>
+<text x="640" y="443" class="small" text-anchor="middle">DOL LOW; next DATA</text>
+<text x="800" y="421" class="small" text-anchor="middle">ACK LOW</text>
+<text x="965" y="443" class="small" text-anchor="middle">Next DOL HIGH</text>
+<rect x="40" y="477" width="1020" height="58" rx="10" fill="#fff6e8" stroke="#e7c791"/>
+<text x="62" y="513" class="label" text-anchor="start">Final bit: DATA emitter OFF before DOL LOW. Only then can the peer own DATA.</text>
+</svg>

@@ -1,0 +1,5 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
+set(CMAKE_CXX_FLAGS_INIT "-mcpu=cortex-m3 -mthumb -O2 -ffreestanding -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections")

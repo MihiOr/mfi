@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+<title id="title">Three fibers, four electrical interfaces per endpoint</title><desc id="desc">Two simplex control fibers cross between signal transmit and receive. One shared data fiber is half duplex. Master and slave are roles of this connection.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172b4d;font-size:17px}.title{font-size:27px;font-weight:700}.head{font-size:21px;font-weight:600}.small{font-size:15px;fill:#455a70}.mono{font-family:Consolas,monospace}.label{font-weight:600}</style>
+<text x="40" y="48" class="title" text-anchor="start">MFI · three-fiber connection</text>
+<text x="40" y="80" class="small" text-anchor="start">Roles belong to this link. The data direction reverses for the response.</text>
+<rect x="40" y="110" width="250" height="330" rx="10" fill="#f3f6fa" stroke="#c2cfde"/>
+<rect x="810" y="110" width="250" height="330" rx="10" fill="#f3f6fa" stroke="#c2cfde"/>
+<text x="165" y="150" class="head" text-anchor="middle">Endpoint A · master</text>
+<text x="935" y="150" class="head" text-anchor="middle">Endpoint B · slave</text>
+<text x="165" y="210" class="mono" text-anchor="middle">SIGNAL_RX</text>
+<text x="935" y="210" class="mono" text-anchor="middle">SIGNAL_TX</text>
+<text x="165" y="280" class="mono" text-anchor="middle">DATA_TX + DATA_RX</text>
+<text x="935" y="280" class="mono" text-anchor="middle">DATA_TX + DATA_RX</text>
+<text x="165" y="350" class="mono" text-anchor="middle">SIGNAL_TX</text>
+<text x="935" y="350" class="mono" text-anchor="middle">SIGNAL_RX</text>
+<path d="M805 204 L300 204" fill="none" stroke="#7950b5" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="550" y="182" class="label" text-anchor="middle">Fiber 1 (A view) · simplex B → A</text>
+<text x="550" y="228" class="small" text-anchor="middle">ACK during request · DOL during response</text>
+<path d="M300 278 L800 278" fill="none" stroke="#117f8c" stroke-width="5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="550" y="260" class="label" text-anchor="middle">Fiber 2 · shared DATA</text>
+<text x="550" y="308" class="small" text-anchor="middle">A sends request · B sends response</text>
+<path d="M300 344 L800 344" fill="none" stroke="#2868b8" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="550" y="330" class="label" text-anchor="middle">Fiber 3 (A view) · simplex A → B</text>
+<text x="550" y="376" class="small" text-anchor="middle">DOL during request · ACK during response</text>
+<text x="165" y="410" class="small" text-anchor="middle">Idle: both emitters OFF</text>
+<text x="935" y="410" class="small" text-anchor="middle">Idle: both emitters OFF</text>
+<rect x="40" y="468" width="1020" height="91" rx="10" fill="#eef6fb" stroke="#c2dbe8"/>
+<text x="62" y="500" class="label" text-anchor="start">DOL = data on line     ACK = read confirmation</text>
+<text x="62" y="530" class="small" text-anchor="start">Optical routing only. Never connect two push-pull electrical transmit outputs together.</text>
+</svg>

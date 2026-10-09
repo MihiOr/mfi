@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="635" viewBox="0 0 1100 635" role="img" aria-labelledby="title desc">
+<title id="title">MFI prototype receiver and LED circuits</title>
+<desc id="desc">Each receiver has 100 nF supply decoupling and a 68 ohm pull-up from VCC to SIGNAL. SIGNAL is HIGH when illuminated. The active-high transmitter example uses a 3.3 volt GPIO output, a 68 ohm series resistor and a red LED to local ground. Receiver package pin order and supply voltage are unidentified.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#c83b48"/></marker></defs>
+<style>text{font-family:Segoe UI,Arial,sans-serif;font-size:17px;fill:#172b4d}.title{font-size:27px;font-weight:700}.head{font-size:21px;font-weight:600}.small{font-size:15px;fill:#455a70}.wire{fill:none;stroke:#35516e;stroke-width:3}.component{fill:white;stroke:#35516e;stroke-width:3}</style>
+<rect width="1100" height="635" fill="white"/>
+<text x="40" y="48" class="title">MFI prototype · receiver and LED circuits</text>
+<text x="40" y="79" class="small">One channel shown for each circuit. The prototype has four receivers and four LED emitters.</text>
+<rect x="40" y="100" width="1020" height="260" rx="12" fill="#f4f7fb" stroke="#c2cfde"/>
+<text x="62" y="133" class="head">Receiver</text>
+<path class="wire" d="M230 162 H700 M500 162 V191 M285 162 V221 M700 162 V191"/>
+<text x="230" y="151">VCC</text>
+<circle cx="285" cy="162" r="4" fill="#35516e"/><circle cx="500" cy="162" r="4" fill="#35516e"/>
+<path class="wire" d="M268 224 H302 M268 233 H302 M285 236 V307"/>
+<text x="256" y="260" class="small" text-anchor="end">100 nF decoupling</text>
+<text x="256" y="282" class="small" text-anchor="end">VCC to GND</text>
+<rect x="400" y="191" width="200" height="91" rx="5" class="component"/>
+<text x="500" y="218" text-anchor="middle" class="small">VCC</text>
+<text x="500" y="243" text-anchor="middle">Optical receiver</text>
+<text x="500" y="269" text-anchor="middle" class="small">GND</text>
+<path class="wire" d="M500 282 V307 H230 M285 307 V320 M600 238 H940"/>
+<circle cx="285" cy="307" r="4" fill="#35516e"/>
+<path class="wire" d="M268 320 H302 M273 327 H297 M279 334 H291"/>
+<rect x="689" y="191" width="22" height="31" class="component"/>
+<path class="wire" d="M700 222 V238"/><circle cx="700" cy="238" r="4" fill="#35516e"/>
+<text x="735" y="193" class="small">Pull-up resistor</text><text x="735" y="215" class="small">68 Ω</text>
+<text x="744" y="270">SIGNAL → GPIO input</text>
+<text x="625" y="320" class="small">Illuminated: SIGNAL HIGH · supply voltage unspecified</text>
+<rect x="40" y="383" width="1020" height="183" rx="12" fill="#fff8f2" stroke="#e6d1bb"/>
+<text x="62" y="417" class="head">Transmitter · active-HIGH source example</text>
+<text x="70" y="469">3.3 V GPIO output</text>
+<path class="wire" d="M260 463 H335 M409 463 H505 M543 463 H650 V493"/>
+<rect x="335" y="451" width="74" height="24" class="component"/>
+<text x="372" y="440" text-anchor="middle">68 Ω</text>
+<path d="M505 446 L534 463 L505 480 Z" fill="#f4a0a8" stroke="#b72c3a" stroke-width="3"/>
+<path class="wire" d="M540 446 V480"/>
+<path d="M544 443 L568 423 M555 450 L579 430" stroke="#c83b48" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="550" y="514" text-anchor="middle">Red LED</text>
+<path class="wire" d="M633 493 H667 M638 500 H662 M644 507 H656"/>
+<text x="690" y="499" class="small">Local GND</text>
+<text x="70" y="543" class="small">Resistor is in series. GPIO HIGH illuminates the LED in the arrangement shown.</text>
+<text x="40" y="603" class="small">Equivalent connections only; receiver package pin order and fiber assignment are not shown.</text>
+</svg>
